@@ -2,20 +2,21 @@ import processing.core.PApplet;
 
 public class Sketch extends PApplet {
 	
-	
   /**
-   * Called once at the beginning of execution, put your size all in this method
+   * A program Sketch.java that is design to make a flower!
+   * @author : Simon Tse
    */
+
   public void settings() {
-	// put your size call here
+	// Size of the drawing
     size(600, 600);
   }
 
   public void setup() {
+  // Colour of the background
     background(184, 211, 255);
   }
 
-  
   public void draw() {
 	  
   // Stem 
