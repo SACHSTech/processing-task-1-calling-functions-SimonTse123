@@ -8,29 +8,33 @@ public class Sketch extends PApplet {
    */
   public void settings() {
 	// put your size call here
-    size(400, 400);
+    size(600, 600);
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
   public void setup() {
-    background(210, 255, 173);
+    background(184, 211, 255);
   }
 
-  /**
-   * Called repeatedly, anything drawn to the screen goes here
-   */
+  
   public void draw() {
 	  
-	// sample code, delete this stuff
-    stroke(128);
-    line(150, 25, 270, 350);  
+  // Stem 
+    strokeWeight (30);
+    stroke (42, 130, 22);
+    line (300, 300, 300, 550);
 
-    stroke(255);
-    line(50, 125, 70, 50);  
+  // Petals
+    strokeWeight (1);
+    stroke (0);
+    fill (235, 156, 255);
+    ellipse (250, 250, 100, 100); 
+    ellipse (350, 350, 100, 100);
+    ellipse( 250, 350, 100, 100);
+    ellipse(350, 250, 100, 100);
+
+  // Middle section of flower
+    fill( 255, 234, 0);
+    ellipse(300, 300, 100, 100);
   }
-  
-  // define other methods down here.
 }
+  
